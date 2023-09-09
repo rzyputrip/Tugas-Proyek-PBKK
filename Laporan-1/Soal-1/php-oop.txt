@@ -1,0 +1,19 @@
+-Pengertian OOP
+OOP (Object Oriented Programming) atau pemrograman berbasis objek merupakan paradigma pemrograman yang berorientasikan objek. Semua data dan fungsi di dalam paradigma ini dibungkus dalam kelas-kelas atau objek-objek.
+Di dalam OOP, kita dapat memetakan persoalan-persoalan dalam program dengan memecah masalah ke dalam class-class yang lebih kecil dan simpel agar solusi yang dibuat lebih spesifik.
+
+-Berikut adalah konsep dasar OOP pada PHP:
+
+a. Class dan Object:
+Class: Kelas adalah blueprint atau cetak biru yang mendefinisikan struktur dan perilaku dari objek. Dalam PHP, Anda mendefinisikan kelas dengan kata kunci class.
+Object: Objek adalah instance konkret dari kelas yang memiliki properti unik dan dapat menjalankan metode yang didefinisikan dalam kelas tersebut.
+
+b. Inheritance (Pewarisan):
+Pewarisan memungkinkan Anda untuk membuat kelas baru (kelas turunan) berdasarkan kelas yang sudah ada (kelas dasar atau induk). Kelas turunan dapat mewarisi properti dan metode dari kelas induknya.
+
+c. Encapsulation (Pembungkusan):
+Encapsulation adalah konsep yang mengizinkan Anda untuk menyembunyikan detail internal dari suatu objek dan memberikan akses terkontrol ke properti dan metode melalui visibilitas (public, private, protected). Ini membantu dalam mencegah akses langsung dan manipulasi tidak sah terhadap data objek.
+
+
+d. Polymorphism (Polimorfisme):
+Polimorfisme memungkinkan Anda untuk menggunakan kelas dasar untuk merujuk ke objek kelas turunan tanpa mengetahui jenis objek yang sebenarnya. Ini memfasilitasi penggunaan metode yang sama dengan berbagai objek yang berbeda.
