@@ -71,12 +71,33 @@ class CategoryController extends Controller
         }
     }
 
-    public function edit(){
+    public function edit($categoryId, Request $request){
+        $category = Category::find($categoryId);
+        if (empty($category)) {
+          return redirect()->route('categories.index');  
+        }
+        
+        
+        return view('admin.category.edit', compact('category'));
 
     }
 
-    public function update(){
+    public function update($categoryId, Request $request){
 
+        $category = Category::find($categoryId);
+
+        if (empty($category)) {
+          return response()->json([
+            'status' => false,
+            'notFound' => true,
+            'message' => 'Category not found'
+          ]);
+        }
+
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'slug' => 'required|unique:categories,slug,'.$category->id.',id', 
+        ]);
     }
 
     public function destroy(){
